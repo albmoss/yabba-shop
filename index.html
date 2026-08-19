@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YABBA STORE</title>
+
+  <link rel="stylesheet" href="styles/shared/general.css">
+  <link rel="stylesheet" href="styles/shared/yabbaz-header.css">
+  <link rel="stylesheet" href="styles/shared/yabbaz-footer.css">
+  <link rel="stylesheet" href="styles/yabbaz.css">
+
+</head>
+
+<body>
+  <header class="yabbaz-header" id="top">
+
+    <div class="left-section-header">
+      <a href="index.html">
+        <img class="head-logo-img" src="images/yabba-logo.png" alt="YABBA">
+      </a>
+    </div>
+
+    <div class="mid-section-header">
+      <input type="text" placeholder="Search Yabbaz" class="search-bar">
+      <button class="search-bar-button">
+        <img class="search-bar-button-img" src="images/icons/search-icon.png" alt="Search">
+      </button>
+    </div>
+
+    <div class="right-section-header">
+      <a class="orders-link" href="orders.html">Orders</a>
+      <a class="cart-container" href="checkout.html">
+        <img class="cart-img" src="images/icons/cart-icon.png" alt="Cart">
+        <span class="cart-counter js-cart-counter">0</span>
+        <span class="cart-text">Cart</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="yabbaz-main">
+    <section class="hero-banner">
+      <div class="hero-text">
+        <h1 class="site-title-text">Everything for home and wardrobe</h1>
+        <p class="hero-subtitle">Free delivery on every order, in seven days. In a hurry? Next-day
+          shipping for $9.99, chosen straight in the cart.</p>
+      </div>
+
+      <div class="hero-highlights">
+        <span class="hero-highlight">42 products in stock</span>
+        <span class="hero-highlight">Free returns for 30 days</span>
+        <span class="hero-highlight">Cart kept between visits</span>
+      </div>
+    </section>
+
+    <nav class="category-nav">
+      <button class="category-link category-link-active js-category-link" data-category="all">All</button>
+      <button class="category-link js-category-link" data-category="apparel">Apparel</button>
+      <button class="category-link js-category-link" data-category="footwear">Footwear</button>
+      <button class="category-link js-category-link" data-category="kitchen">Kitchen</button>
+      <button class="category-link js-category-link" data-category="appliances">Appliances</button>
+      <button class="category-link js-category-link" data-category="bathroom">Bathroom</button>
+      <button class="category-link js-category-link" data-category="home">Home</button>
+      <button class="category-link js-category-link" data-category="accessories">Accessories</button>
+      <button class="category-link js-category-link" data-category="sports">Sports</button>
+    </nav>
+
+    <ul class="products-grid js-products-grid"></ul>
+  </main>
+
+
+  <footer class="yabbaz-footer">
+    <a class="back-to-top" href="#top">
+      <span class="back-to-top-arrow">&uarr;</span>Back to top
+    </a>
+
+    <div class="footer-columns">
+      <div class="footer-column">
+        <span class="footer-heading">Shop</span>
+        <a class="footer-link" href="index.html">Catalogue</a>
+        <a class="footer-link" href="checkout.html">Your cart</a>
+        <a class="footer-link" href="orders.html">Your orders</a>
+        <a class="footer-link" href="tracking.html">Track a package</a>
+      </div>
+
+      <div class="footer-column">
+        <span class="footer-heading">Delivery</span>
+        <span class="footer-item">Free &mdash; arrives in 7 days</span>
+        <span class="footer-item">$4.99 &mdash; arrives in 3 days</span>
+        <span class="footer-item">$9.99 &mdash; arrives next day</span>
+      </div>
+
+      <div class="footer-column">
+        <span class="footer-heading">Payment and returns</span>
+        <span class="footer-item">All prices in USD</span>
+        <span class="footer-item">Free returns within 30 days</span>
+        <span class="footer-item">FAQ</span>
+      </div>
+
+      <div class="footer-column">
+        <span class="footer-heading">About YABBA</span>
+        <span class="footer-item">A demo store page</span>
+        <span class="footer-item">Built with my mind</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-wordmark">YABBA.PL</span>
+      <span class="footer-note">&copy; 2026 YABBA &middot; STORE ORIGINAL</span>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/yabbaz.js"></script>
+</body>
+
+</html>

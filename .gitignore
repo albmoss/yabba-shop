@@ -1,0 +1,11 @@
+# Śmieci systemowe i edytora
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Zależności, gdyby kiedyś doszły
+node_modules/
+
+# Lokalne pliki robocze
+*.log
+*.tmp

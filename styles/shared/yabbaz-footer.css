@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+.yabbaz-footer {
+  position: relative;
+  margin: 40px 40px 12px;
+  border-radius: 32px;
+  overflow: hidden;
+  min-width: 540px;
+
+  background: linear-gradient(120deg, #7e2443, var(--cherry));
+  border: 1px solid #a9516c;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 26px 40px;
+  padding: 74px 45px 34px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-heading {
+  margin-bottom: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-link,
+.footer-item {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #f7d6e1;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px 20px;
+  padding: 17px 45px;
+  border-top: 1px solid rgba(247, 214, 225, 0.25);
+}
+
+.footer-wordmark {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: white;
+}
+
+.footer-note {
+  font-size: 13px;
+  color: #f7d6e1;
+}
+
+.back-to-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  top: 24px;
+  right: 45px;
+  padding: 9px 18px;
+  border-radius: 22px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--surface);
+  box-shadow: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.back-to-top:hover {
+  transform: translateY(-1px) scale(1.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.back-to-top:active {
+  transform: scale(0.98);
+}
+
+.back-to-top-arrow {
+  font-size: 15px;
+  line-height: 1;
+  color: var(--text);
+}
+
+.yabbaz-footer a:focus-visible {
+  outline-color: #ffc2d7;
+}
+
+@media (max-width: 640px) {
+  .yabbaz-footer {
+    min-width: 0;
+    margin: 40px 16px 12px;
+  }
+
+  .back-to-top {
+    top: 20px;
+    right: 24px;
+  }
+
+  .footer-columns {
+    padding: 66px 24px 26px;
+  }
+
+  .footer-bottom {
+    padding: 15px 24px;
+  }
+}
